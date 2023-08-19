@@ -11,6 +11,7 @@ sealed class BarberShopTheme {
 
   static ThemeData themeData = ThemeData(
     useMaterial3: true,
+    fontFamily: FontsConstantes.fontFamily,
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: Colors.white,

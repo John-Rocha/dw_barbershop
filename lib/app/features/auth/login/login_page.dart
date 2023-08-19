@@ -51,13 +51,18 @@ class LoginPage extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 16),
-                        const Align(
+                        Align(
                           alignment: Alignment.centerLeft,
-                          child: Text(
-                            'Esqueceu a senha?',
-                            style: TextStyle(
-                              fontSize: 12,
-                              color: ColorsConstants.brown,
+                          child: TextButton(
+                            onPressed: () {
+                              debugPrint('Esqueci minha senha');
+                            },
+                            child: const Text(
+                              'Esqueceu a senha?',
+                              style: TextStyle(
+                                fontSize: 12,
+                                color: ColorsConstants.brown,
+                              ),
                             ),
                           ),
                         ),
@@ -71,14 +76,19 @@ class LoginPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const Align(
+                    Align(
                       alignment: Alignment.bottomCenter,
-                      child: Text(
-                        'Criar conta',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
+                      child: TextButton(
+                        onPressed: () {
+                          debugPrint('Criar contar');
+                        },
+                        child: const Text(
+                          'Criar conta',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                          ),
                         ),
                       ),
                     )
