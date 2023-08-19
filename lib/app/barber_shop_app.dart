@@ -13,6 +13,7 @@ class BarberShopApp extends StatelessWidget {
       builder: (asyncNavigatorObserver) {
         return MaterialApp(
           title: 'DW BarberShop',
+          debugShowCheckedModeBanner: false,
           navigatorObservers: [asyncNavigatorObserver],
           initialRoute: '/',
           routes: {
