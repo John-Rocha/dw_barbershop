@@ -1,6 +1,11 @@
 import 'package:dw_barbershop/app/barber_shop_app.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
-  runApp(const BarberShopApp());
+  runApp(
+    const ProviderScope(
+      child: BarberShopApp(),
+    ),
+  );
 }
