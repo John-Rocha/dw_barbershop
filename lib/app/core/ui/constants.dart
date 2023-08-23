@@ -4,6 +4,11 @@ sealed class FontsConstantes {
   static const fontFamily = 'Poppins';
 }
 
+sealed class ImageConstants {
+  static const backgroundChair = 'assets/images/background_image_chair.jpg';
+  static const imgLogo = 'assets/images/imgLogo.png';
+}
+
 sealed class ColorsConstants {
   static const brown = Color(0XFFB07B01);
   static const grey = Color(0XFF999999);
